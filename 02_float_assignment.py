@@ -44,9 +44,8 @@ print(CI)
 # Question 4: Find the hypotenuse of a right triangle with sides 3.5 and 4.2
 print("\nQuestion 4: Find the hypotenuse of a right triangle with sides 3.5 and 4.2")
 # Your code here
-import math
 a,b = 3.5,4.2
-c = math.sqrt(a**2 + b**2)
+c = (a**2 + b**2)**(1/2)
 print(round(c,1))
 5.5
 
@@ -54,9 +53,10 @@ print(round(c,1))
 print("\nQuestion 5: Calculate the volume of a sphere with radius 7.8")
 # Your code here
 r = 7.8
-V = (4/3)*math.pi * r**3
-print(V)
-1987.798769261791
+pi = 3.142
+V = (4/3)*pi * r**3
+print(round(V,3))
+1988.057
 
 # Question 6: Round 3.14159 to 3 decimal places
 print("\nQuestion 6: Round 3.14159 to 3 decimal places")
@@ -77,9 +77,8 @@ print(PER)
 # Question 8: Find the square root of 23.456
 print("\nQuestion 8: Find the square root of 23.456")
 # Your code here
-import math
 a = 23.456
-b = math.sqrt(a)
+b = 23.456 ** (1/2)
 print(b)
 4.843139477652899
 
@@ -94,8 +93,8 @@ print(si)
 # Question 10: Convert 45.7 degrees to radians
 print("\nQuestion 10: Convert 45.7 degrees to radians")
 # Your code here 
-import math
+pi = 3.142
 D = 45.7
-R = math.radians(D)
+R = D * (pi/180)
 print(R)
-0.7976154681614086
+0.7977188888888889
